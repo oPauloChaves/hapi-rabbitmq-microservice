@@ -1,0 +1,61 @@
+{
+  "name": "hapi-rabbitmq-microservice",
+  "version": "0.1.0",
+  "main": "./src",
+  "license": "MIT",
+  "author": {
+    "name": "Paulo Chaves",
+    "email": "opaulochaves@gmail.com"
+  },
+  "keywords": [
+    "api",
+    "swagger",
+    "hapi",
+    "joi",
+    "mongodb",
+    "docker",
+    "rabbitmq"
+  ],
+  "scripts": {
+    "prod": "NODE_ENV=production node ./src",
+    "dev": "nodemon ./src",
+    "test": "lab -a code",
+    "format": "prettier --write \"./**/*.js\""
+  },
+  "dependencies": {
+    "blipp": "^3.0.0",
+    "boom": "^7.1.1",
+    "dotenv": "^4.0.0",
+    "good": "hapijs/good",
+    "good-console": "^6.4.1",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^17.2.0",
+    "hapi-swagger": "^9.0.0",
+    "inert": "^5.0.1",
+    "joi": "^13.0.2",
+    "mongoose": "^4.13.7",
+    "vision": "^5.2.0"
+  },
+  "devDependencies": {
+    "code": "^5.1.2",
+    "lab": "^15.1.2",
+    "nodemon": "^1.14.3",
+    "prettier": "^1.9.2",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 80,
+    "semi": false,
+    "trailingComma": "all",
+    "bracketSpacing": false
+  }
+}
