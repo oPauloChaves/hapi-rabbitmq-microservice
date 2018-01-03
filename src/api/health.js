@@ -20,7 +20,6 @@ exports.plugin = {
 
   async register(server, {api}) {
     server.route([IndexRoute(api)])
-
-    server.log('info', 'Plugin registered: health-route')
+    // server.log('info', `${api.basePath}/ registered`)
   },
 }

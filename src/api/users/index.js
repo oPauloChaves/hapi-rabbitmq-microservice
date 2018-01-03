@@ -25,7 +25,6 @@ exports.plugin = {
 
   async register(server, {api}) {
     server.route([IndexRoute(api)])
-
-    server.log('info', 'Plugin registered: users-routes')
+    // server.log('info', `${api.basePath}/users registered`)
   },
 }

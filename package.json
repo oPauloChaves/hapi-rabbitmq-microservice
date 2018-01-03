@@ -1,5 +1,6 @@
 {
   "name": "hapi-rabbitmq-microservice",
+  "description": "Microservices with Hapi, RabbitMQ and MongoDB",
   "version": "0.1.0",
   "main": "./src",
   "license": "MIT",
