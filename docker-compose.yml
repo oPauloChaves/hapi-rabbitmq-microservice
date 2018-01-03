@@ -37,8 +37,11 @@ services:
       - rabbit
     environment:
       - PORT=8080
+      - HOST=0.0.0.0
       - NODE_ENV=development
-      - MONGODB_URI="mongodb://mongo:27017/rmq"
+      - MONGODB_URI=mongodb://mongo:27017/rmq_dev
+      - SWAGGER_HOST=localhost:8080
+      - SWAGGER_DOCPATH=/docs
 
 volumes:
   db-data:
