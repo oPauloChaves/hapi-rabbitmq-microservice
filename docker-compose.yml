@@ -3,7 +3,7 @@ version: '2'
 services:
   mongo:
     image: mongo:3.6
-    container_name: rmq_mongo
+    container_name: rmq-mongo
     volumes:
       - "db-data:/data/db"
     ports:
@@ -11,7 +11,7 @@ services:
     command: --smallfiles
 
   rabbit:
-     container_name: rmq_rabbit
+     container_name: rmq-rabbit
      hostname: rabbit
      image: rabbitmq:3.7-management
      environment:
@@ -24,7 +24,7 @@ services:
   api:
     build:
       context: .
-    container_name: zssn-api
+    container_name: rmq-api
     command: npm run dev
     volumes:
       - .:/usr/src/api
