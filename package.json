@@ -34,7 +34,7 @@
     "hapi-swagger": "^9.0.0",
     "inert": "^5.0.1",
     "joi": "^13.0.2",
-    "mongoose": "^4.13.7",
+    "mongoose": "^5.7.5",
     "vision": "^5.2.0"
   },
   "devDependencies": {
